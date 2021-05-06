@@ -67,8 +67,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('Smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('email id','password')
-    server.sendmail('email id, to, content)
+    server.login('shivamgoyalindia42@gmail.com','dynamite123@123####')
+    server.sendmail('shivamgoyalindia42@gmail.com', to, content)
     server.close()
 
 name = True  
@@ -98,7 +98,7 @@ if __name__ == "__main__":
             exit()            
 
         elif 'how are you' in query or  "what\'s up" in query:
-            stMgs = ['jusyt doing my thing !', 'I am Fine','Nice!','i am nice and full of energy']
+            stMgs = ['just doing my thing !', 'I am Fine','Nice!','i am nice and full of energy']
             speak(random.choice(stMgs))
         
        
